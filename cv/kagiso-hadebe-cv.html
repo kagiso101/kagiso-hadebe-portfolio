@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Kagiso Hadebe — CV</title>
+<!--
+  Source for public/kagiso-hadebe-cv.pdf. Keep this in step with app/page.tsx.
+  Regenerate the PDF with Chrome or Edge headless from the repo root:
+
+    chrome --headless=new --disable-gpu --no-pdf-header-footer \
+      --print-to-pdf="public/kagiso-hadebe-cv.pdf" "file:///<abs path>/cv/kagiso-hadebe-cv.html"
+-->
+<style>
+  @page { size: A4; margin: 13mm 15mm 14mm; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #fff; }
+  body {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    color: #1a1a1a;
+    font-size: 9.9pt;
+    line-height: 1.38;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  a { color: inherit; text-decoration: none; }
+
+  .header { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; padding-bottom: 10px; border-bottom: 2px solid #cc0000; }
+  .header > div:first-child { flex: 1; }
+  .header > .contact { flex-shrink: 0; }
+  h1 { font-size: 22pt; letter-spacing: 0.03em; line-height: 1.05; text-transform: uppercase; font-weight: 800; }
+  .title { margin-top: 4px; font-size: 10.5pt; color: #444; font-weight: 500; }
+  .contact { font-size: 9pt; color: #333; text-align: right; line-height: 1.65; white-space: nowrap; }
+
+  h2 { font-size: 9.5pt; letter-spacing: 0.14em; text-transform: uppercase; color: #cc0000; margin: 12px 0 6px; padding-bottom: 3px; border-bottom: 1px solid #ddd; }
+  p { margin-bottom: 5px; }
+
+  .job { margin-bottom: 8px; break-inside: avoid; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .role { font-weight: 700; font-size: 10.5pt; }
+  .company { color: #cc0000; font-weight: 600; font-size: 9.5pt; }
+  .period { font-family: Consolas, "Courier New", monospace; font-size: 8.5pt; color: #666; white-space: nowrap; }
+  ul { margin: 4px 0 0 14px; }
+  li { margin-bottom: 2px; }
+  .tech { margin-top: 3px; font-family: Consolas, "Courier New", monospace; font-size: 8pt; color: #666; }
+
+  .kv { display: grid; grid-template-columns: 160px 1fr; gap: 3px 12px; }
+  .kv dt { font-weight: 700; }
+  .langs { display: flex; gap: 24px; flex-wrap: wrap; }
+  strong { font-weight: 700; }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div>
+    <h1>Kagiso Hadebe</h1>
+    <div class="title">Software Developer · Founder, ROGUETECHNOLOGIES (Pty) Ltd</div>
+  </div>
+  <div class="contact">
+    066 444 0780<br>
+    <a href="mailto:hadebekagiso3@gmail.com">hadebekagiso3@gmail.com</a><br>
+    <a href="https://www.linkedin.com/in/kagiso-hadebe-611a9a192/">linkedin.com/in/kagiso-hadebe-611a9a192</a><br>
+    <a href="https://kagiso-hadebe.netlify.app">kagiso-hadebe.netlify.app</a><br>
+    Cape Town, South Africa
+  </div>
+</header>
+
+<h2>Profile</h2>
+<p>
+  Fullstack Software Developer at Rain, working on the B2B portal — the platform Rain&#8217;s business customers use to buy and manage products in volume. I work across the stack: a Next.js 16 frontend and a Go API, with an OpenAPI contract between them.
+</p>
+<p>
+  Outside Rain I am the founder of ROGUETECHNOLOGIES (Pty) Ltd, a Cape Town web development studio, and the builder of Bookvas, its first product: a multi-tenant booking platform where clients pay a deposit to book, so small service businesses stop losing money to no-shows. I like owning a thing end to end: the schema, the API, the UI, the deploy, and the customer who uses it.
+</p>
+
+<h2>Experience</h2>
+
+<div class="job">
+  <div class="job-head">
+    <div><span class="role">Software Developer (Intermediate)</span> · <span class="company">Rain</span></div>
+    <span class="period">07/2026 — Present</span>
+  </div>
+  <ul>
+    <li>Fullstack developer on Rain&#8217;s B2B portal — the platform business customers use to buy and manage products in volume.</li>
+    <li>Work across both repos: the Next.js 16 App Router frontend and the stateless Go API.</li>
+    <li>Built the OpenAPI → TypeScript codegen pipeline so the frontend and Go backend share one contract.</li>
+    <li>Delivered product detail, top-up and cancellation flows end to end.</li>
+    <li>Produced a full codebase audit and interactive reference documentation for the team.</li>
+  </ul>
+  <div class="tech">Next.js 16 · TypeScript · Go · PostgreSQL · OpenAPI</div>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <div><span class="role">Intermediate Frontend Developer &amp; Feature Team Lead</span> · <span class="company">Retro Rabbit / Smartek21</span></div>
+    <span class="period">05/2025 — 07/2026</span>
+  </div>
+  <ul>
+    <li>Led one of several feature teams at a software development house, guiding developers on architecture, code quality and sprint delivery across client and internal projects.</li>
+    <li>Drove event-driven state management with NgRx SignalStore — Events, Reducers, Effects, Facade, Store.</li>
+    <li>Architected reusable high-performance UI components: advanced tables, dynamic filters, dropdowns, expansions.</li>
+    <li>Optimised frontend performance through lazy loading, bundle optimisation, change-detection tuning and state isolation.</li>
+    <li>Owned CI/CD in Azure DevOps — repositories, pull requests, automated testing, pipelines.</li>
+  </ul>
+  <div class="tech">Angular · NgRx SignalStore · Azure DevOps</div>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <div><span class="role">Founder &amp; CEO</span> · <span class="company">ROGUETECHNOLOGIES (Pty) Ltd</span></div>
+    <span class="period">2025 — Present</span>
+  </div>
+  <ul>
+    <li>Founded a Cape Town web development studio; registered as a Pty Ltd in 2026.</li>
+    <li>Shipped client work end to end — brand, site, domain, hosting, email.</li>
+    <li>Designed and built <strong>Bookvas</strong>, the studio&#8217;s own product: multi-tenant booking SaaS with PayFast deposits and split settlement, Spring Boot 4 on Cloud Run, Angular 21 frontends, Flyway-managed Postgres, cross-tenant isolation test suite.</li>
+  </ul>
+  <div class="tech">Strategy · Fullstack · Product</div>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <div><span class="role">Intermediate Frontend Developer</span> · <span class="company">Rain</span></div>
+    <span class="period">07/2024 — 05/2025</span>
+  </div>
+  <ul>
+    <li>Built and maintained customer-facing and internal Angular applications, including the assisted-sales portal.</li>
+    <li>Applied NGXS state management to separate UI logic from domain logic.</li>
+    <li>Optimised bundle size, routing, lazy loading and change detection.</li>
+    <li>Integrated REST APIs with structured error handling, retry logic and optimistic UI updates.</li>
+  </ul>
+  <div class="tech">Angular · NGXS · SCSS</div>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <div><span class="role">Angular Developer</span> · <span class="company">Rain</span></div>
+    <span class="period">01/2023 — 07/2024</span>
+  </div>
+  <ul>
+    <li>Crafted front-end UI designs using HTML5, SCSS, TypeScript, Angular, and Angular Material for responsive layouts.</li>
+    <li>Implemented RxJS streams for asynchronous communication, elevating dynamic client-server interactions.</li>
+    <li>Developed reusable, modular components, directives, and services to expedite feature development and maintain codebases.</li>
+    <li>Managed code repositories with Git and GitLab, utilizing collaborative branching and merging strategies.</li>
+  </ul>
+  <div class="tech">Angular · RxJS · Material</div>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <div><span class="role">Junior Frontend Developer</span> · <span class="company">Acumen / FiftyKnots</span></div>
+    <span class="period">04/2022 — 09/2022</span>
+  </div>
+  <ul>
+    <li>Utilized C#, .NET Core, HTML, CSS, jQuery, and NopCommerce to deliver state-of-the-art solution updates.</li>
+    <li>Specialized in customizing e-commerce systems, setting up payment processing configurations, and implementing third-party integrations.</li>
+  </ul>
+  <div class="tech">C# · .NET Core · jQuery</div>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <div><span class="role">Assistant Code Mentor</span> · <span class="company">Project CodeX</span></div>
+    <span class="period">01/2022 — 04/2022</span>
+  </div>
+  <ul>
+    <li>Guided aspiring developers towards coding proficiency via structured code reviews, pair programming, technical assistance, and actionable debugging feedback.</li>
+  </ul>
+  <div class="tech">Mentorship · Java · Web</div>
+</div>
+
+<h2>Selected Work</h2>
+
+<div class="job">
+  <div class="job-head">
+    <div><span class="role">Bookvas</span> · <span class="company">Own product · Live</span></div>
+  </div>
+  <p>Deposit-secured online booking for South African service businesses. Clients pay a PayFast deposit to book; the money settles straight into the business owner&#8217;s own merchant account. Multi-tenant Spring Boot 4 API on Cloud Run, Angular 21 tenant and admin apps, Flyway-managed Postgres, 24-test cross-tenant isolation suite.</p>
+  <div class="tech">Java 21 · Spring Boot 4 · Angular 21 · PostgreSQL · PayFast · Google Cloud</div>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <div><span class="role">ROGUETECHNOLOGIES</span> · <span class="company">Agency · Founder</span></div>
+    <span class="period">rogue-tech.co.za</span>
+  </div>
+  <p>Cape Town web development studio — brand, site and service packages built end to end. &#8220;Your digital team. Built to grow with you.&#8221;</p>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <div><span class="role">Bruja Thembi</span> · <span class="company">Client project · Live</span></div>
+    <span class="period">brujathembi.com</span>
+  </div>
+  <p>First publicly deployed client project — a booking-led site with Cal.com integration, custom domain and branded email, shipped end to end.</p>
+</div>
+
+<h2>Stack</h2>
+<dl class="kv">
+  <dt>Frontend</dt><dd>Next.js 16 · Angular 21 · TypeScript · React · NgRx SignalStore · NGXS · RxJS · Tailwind CSS · SCSS · Vitest</dd>
+  <dt>Backend &amp; Data</dt><dd>Go · Java 21 / Spring Boot 4 · PostgreSQL · Flyway · REST / OpenAPI · C# .NET Core</dd>
+  <dt>Cloud &amp; Tooling</dt><dd>Google Cloud Run · Cloud SQL · Secret Manager · Docker · GitHub Actions · Azure DevOps · Netlify · Git / GitLab</dd>
+  <dt>Payments &amp; Integrations</dt><dd>PayFast · Cal.com · Brevo · Cloudflare Turnstile · Google Maps Platform</dd>
+</dl>
+
+<h2>Education</h2>
+<div class="job">
+  <div class="job-head">
+    <div><span class="role">Software Development (NQF Level 5)</span> · <span class="company">Project CodeX</span></div>
+    <span class="period">2022</span>
+  </div>
+  <p>Java Oracle SE8 Programmer (Oracle Certified Associate); Full Stack Web Developer training; Responsive Web Design; Agile methodologies.</p>
+</div>
+<div class="job">
+  <div class="job-head">
+    <div><span class="role">National Senior Certificate</span> · <span class="company">Isipingo Secondary School</span></div>
+    <span class="period">2019</span>
+  </div>
+</div>
+
+<h2>Languages</h2>
+<div class="langs">
+  <span><strong>English</strong> · Native</span>
+  <span><strong>isiZulu</strong> · Native</span>
+  <span><strong>Sesotho</strong> · Native</span>
+  <span><strong>Afrikaans</strong> · Basic</span>
+</div>
+
+</body>
+</html>

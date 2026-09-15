@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Kagiso Hadebe — Senior Frontend Developer & Founder, RogueTech",
+  title: "Kagiso Hadebe — Software Developer · Founder, ROGUETECHNOLOGIES",
   description:
-    "Kagiso Hadebe — Senior Frontend Developer at Retro Rabbit / Smartek21, and Founder & CEO of RogueTech, a Johannesburg-based digital agency and software studio.",
+    "Kagiso Hadebe — fullstack Software Developer at Rain and Founder & CEO of ROGUETECHNOLOGIES (Pty) Ltd, a Cape Town web development studio. Building Bookvas, a deposit-secured booking platform for South African service businesses.",
 };
 
 export default function RootLayout({
@@ -21,7 +22,10 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <GoogleAnalytics gaId="G-416CJXW1LG" />
+      </body>
     </html>
   );
 }
